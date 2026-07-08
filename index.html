@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flyovlyoffc Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="statusbar" id="statusbar">
+  <span class="statusbar-clock" id="clock">00.00.00</span>
+  <span class="statusbar-divider"></span>
+  <span class="statusbar-battery">
+    <span class="battery-shell"><span class="battery-fill" id="batteryFill"></span></span>
+    <span id="batteryLabel">100%</span>
+  </span>
+</div>
+
+<main>
+
+  <div class="hero-wrap">
+    <section class="hero">
+      <canvas id="netCanvas"></canvas>
+      <div class="hero-fade"></div>
+    </section>
+    <div class="avatar-wrap">
+      <div class="avatar" id="avatar">
+        <img src="assets/logo.png" alt="Logo Flyovlyoffc Store">
+      </div>
+    </div>
+  </div>
+
+  <section class="identity">
+    <h1>Flyovlyoffc Store</h1>
+    <p class="tagline">Sewa bot, panel & VPS yang jalan tanpa drama</p>
+  </section>
+
+  <section class="description">
+    <p>
+      Flyovlyoffc Store dimulai dari kebiasaan begadang benerin bot yang tiba-tiba
+      putus koneksi. Dari situ akhirnya kami mutusin buat nyediain tempat
+      sewa bot WhatsApp, panel Pterodactyl, dan VPS yang konfigurasinya udah
+      kami rapihin dari awal, jadi kamu tinggal pakai tanpa perlu ngoprek
+      dari nol.
+    </p>
+    <p>
+      Setiap layanan kami pasang dan kami cek satu-satu secara manual,
+      bukan asal generate dari template. Kalau ada yang aneh di server,
+      kami yang pertama nyadar duluan sebelum kamu sempat komplain.
+    </p>
+  </section>
+
+  <section class="links">
+    <a class="link-card" href="https://whatsapp.com/channel/0029VbCgpW1JP20ulqBCAq2B" target="_blank" rel="noopener">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3C7.03 3 3 6.8 3 11.5c0 2.02.86 3.86 2.3 5.32L4 21l4.34-1.24C9.42 20.24 10.68 20.5 12 20.5c4.97 0 9-3.8 9-8.5S16.97 3 12 3z" stroke="currentColor" stroke-width="1.5"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">Channel Flyovlyoffc Store</span>
+        <span class="link-sub">Update rilis & status server</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a class="link-card" href="https://chat.whatsapp.com/KCWT3GPOQLi4NpqRfxp9mZ" target="_blank" rel="noopener">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M17 20h4v-2a4 4 0 00-3-3.87M13 3.13a4 4 0 010 7.75M4 20v-2a4 4 0 013-3.87M9 11a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="1.5"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">Grup Diskusi</span>
+        <span class="link-sub">Ngobrol bareng user lain</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a class="link-card" href="https://chat.whatsapp.com/GBJ11dExwiKJPsF7Ps3SAU" target="_blank" rel="noopener">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v4M12 3a5 5 0 015 5v3a5 5 0 01-10 0v-3a5 5 0 015-5zM7 11H5a2 2 0 00-2 2v1M17 11h2a2 2 0 012 2v1M9 21h6" stroke="currentColor" stroke-width="1.5"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">Grup Tester Bot</span>
+        <span class="link-sub">Main & coba bot bareng</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a class="link-card" href="https://sociabuzz.com/flyoovly" target="_blank" rel="noopener">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.2C.5 8.4 2 5 5.5 5c2 0 3.5 1.2 4.5 2.8C11 6.2 12.5 5 14.5 5 18 5 19.5 8.4 22 11.8 19.5 16.4 12 21 12 21z" stroke="currentColor" stroke-width="1.5"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">Donate & Support</span>
+        <span class="link-sub">Bantu Flyoo lewat Sociabuzz</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a class="link-card" href="https://t.me/flyovlyultramen" target="_blank" rel="noopener">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M21 4L3 11.5l6 2m12-9.5l-4 16-6-5m10-11L9 13.5m0 0l-1 5.5 3-3.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">Telegram</span>
+        <span class="link-sub">@flyovlyultramen</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a class="link-card" href="https://www.tiktok.com/@xynprstt?_r=1&_t=ZS-97qzq6DFCS4" target="_blank" rel="noopener">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M16 3v9.5a3.5 3.5 0 11-3.5-3.5c.35 0 .68.04 1 .12V6a6.5 6.5 0 106.5 6.5V8.8a6.5 6.5 0 004-1.4V4a4 4 0 01-4-1z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">TikTok</span>
+        <span class="link-sub">@xynprstt</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a class="link-card" href="https://www.instagram.com/flyo_sukanyawit?igsh=MWNleTVzdW5rNXBsaQ==" target="_blank" rel="noopener">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">Instagram</span>
+        <span class="link-sub">@flyo_sukanyawit</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+    <a class="link-card" href="contact.html">
+      <span class="link-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v12H7l-3 3V4z" stroke="currentColor" stroke-width="1.5"/></svg>
+      </span>
+      <span class="link-text">
+        <span class="link-title">Hubungi Admin</span>
+        <span class="link-sub">Kirim pesan lewat halaman kontak</span>
+      </span>
+      <span class="link-arrow">→</span>
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Flyovlyoffc Store · Semua hak dilindungi</p>
+  </footer>
+
+</main>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/6281344403966" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 004.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C22 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.91-1.26-4.81-4.18-4.96-4.38-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.02.66.5.24.53.82 1.83.9 1.96.07.13.12.28.02.46-.09.18-.14.28-.28.44-.14.16-.29.35-.41.47-.14.14-.28.29-.12.57.16.28.71 1.16 1.53 1.88 1.05.93 1.94 1.22 2.22 1.36.28.14.44.12.6-.06.16-.18.68-.79.87-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.66-.18 1.34z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
